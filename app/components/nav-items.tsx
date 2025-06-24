@@ -7,11 +7,13 @@ interface NavItemProps {
 
 const NavItem = ({ label, href }: NavItemProps) => {
   return (
-    <li className="nav-item">
+  <span > <li className= 'mr-6'>
       <Link href={href}>
         <i>{label}</i>
       </Link>
     </li>
+    </span> 
+   
   );
 };
 

@@ -1,9 +1,16 @@
 import Image from 'next/image'
+import Header from './components/header'
+import Navigation from './components/navigation'
+import Footer from './components/footer'
+
+
+
 
 export default function Page() {
   return (
   <>
-   <Image className='w-50' src="/logo.jpg" alt="Profile" width={500} height={500} />
-   </>
+  {/* <Navigation></Navigation> */}
+  <Header></Header>
+  </>
   )
 }
