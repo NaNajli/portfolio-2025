@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import Header from './components/header'
 import Navigation from './components/navigation'
-import Footer from './components/footer'
+// import Footer from './components/footer'
+// import About from '../pages/about/page'
 
 
 
@@ -9,8 +9,11 @@ import Footer from './components/footer'
 export default function Page() {
   return (
   <>
-  {/* <Navigation></Navigation> */}
+  <Navigation></Navigation>
   <Header></Header>
+  {/* <About></About> */}
+  {/* <Footer></Footer> */}
+
   </>
   )
 }

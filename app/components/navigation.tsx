@@ -13,34 +13,39 @@ const links = [
   {
     id:2,
     label: 'Sobre mi',
-    href: '/pages/about'
+    href: '/about/page'
   },
   {
     id:3,
     label:'Educacion',
-    href:`/pages/education`
+    href:`/education/page`
   },
   {
     id:4,
     label:'Contacto',
-    href:`/pages/contact`
+    href:`/contact/page`
   },
   {
     id: 5,
     label: 'Proyectos',
-    href: 'pages/projects',
+    href: '/projects/page',
   },
 ]; 
 
-  return (
-    <nav >
-      <Image className='w-30 rounded-full shadow-xl/30' src="/logo.jpg" alt="Profile" width={500} height={500} />
-      <ul className="flex flex-col ml-6 md:flex-row  md:ml-134">
+   return (
+   <>
+    <nav  className="lg:w-full p-4 ">
+    <ul className="flex flex-col md:flex-row md:items-center justify-between w-full">
+      <li><Image className='w-15 rounded-full shadow-xl/30 md:w-30 justify-self-start items-center' src="/logo.jpg" alt="Profile" width={500} height={500} /></li>
+       <span className="flex flex-col md:flex-row md:space-x-6 md:items-end items-center md:mr-6">
         {links.map(({ id ,label, href}) => {
           return <NavItem  key={id} label={label} href={href} />;
         })}
-        
+        </span>  
       </ul>
     </nav>
+    </>
+
+    
   );
 };
