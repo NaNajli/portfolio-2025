@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
     <header>
-    <h1 className={`${italiana.className} text-4xl sm:text-5xl pt:3 text-center md:text-6xl font-bold pt-34`}>
+    <h1 className={`${italiana.className} text-4xl sm:text-5xl pt:3 text-center md:text-6xl font-bold pt-34 `}>
          Nadia Rodriguez
     </h1>
     <h2 className='text-center font-bold '>Desarrollo Web</h2>   

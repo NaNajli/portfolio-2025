@@ -1,7 +1,9 @@
+'use client'
 import NavItem from "./nav-items";
 import Image from 'next/image';
+import React, { useState } from 'react';
 
-export default async function Navigation () {
+export default function Navigation () {
 
    
 const links = [
@@ -17,7 +19,7 @@ const links = [
   },
   {
     id:3,
-    label:'Educacion',
+    label:'Educación',
     href:`/education/page`
   },
   {
@@ -32,20 +34,25 @@ const links = [
   },
 ]; 
 
+ const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+      setIsOpen(!isOpen);
+  };
+
+
    return (
-   <>
-    <nav  className="lg:w-full p-4 ">
-    <ul className="flex flex-col md:flex-row md:items-center justify-between w-full">
-      <li><Image className='w-15 rounded-full shadow-xl/30 md:w-30 justify-self-start items-center' src="/logo.jpg" alt="Profile" width={500} height={500} /></li>
-       <span className="flex flex-col md:flex-row md:space-x-6 md:items-end items-center md:mr-6">
-        {links.map(({ id ,label, href}) => {
-          return <NavItem  key={id} label={label} href={href} />;
+     <nav className="w-full p-4 bg-white shadow-md">
+      <div className="flex items-center justify-between">
+        <Image className='w-25 rounded-full shadow-xl/30 md:w-35 justify-self-start ' src="/logo.jpg" alt="Profile" width={500} height={500} />
+        <button onClick={handleClick} className="md:hidden text-2xl"> ☰ </button>
+      </div>
+      <ul className={`flex flex-col md:flex-row md:items-center ${ isOpen ? 'block' : 'hidden md:flex' }`}> 
+         <span className="flex flex-col md:flex-row items-center justify-end  w-full md:space-x-6">
+         {links.map(({ id ,label, href}) => {
+           return <NavItem  key={id} label={label} href={href} />;
         })}
-        </span>  
+       </span>  
       </ul>
     </nav>
-    </>
-
-    
-  );
+  )
 };
