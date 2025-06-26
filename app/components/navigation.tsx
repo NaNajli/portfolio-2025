@@ -15,22 +15,22 @@ const links = [
   {
     id:2,
     label: 'Sobre mi',
-    href: '/about/page'
+    href: '/about'
   },
   {
     id:3,
     label:'Educación',
-    href:`/education/page`
+    href:`/education`
   },
   {
     id:4,
     label:'Contacto',
-    href:`/contact/page`
+    href:`/contact`
   },
   {
     id: 5,
     label: 'Proyectos',
-    href: '/projects/page',
+    href: 'projects',
   },
 ]; 
 

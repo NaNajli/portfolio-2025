@@ -14,6 +14,7 @@ const Header = () => {
          Nadia Rodriguez
     </h1>
     <h2 className='text-center font-bold '>Desarrollo Web</h2>   
+    <div className="bg-[#ebddd7] p-30"></div>
     </header>
     </>
   )
