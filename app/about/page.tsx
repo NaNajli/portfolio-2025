@@ -8,10 +8,10 @@ export default function About() {
 <div className="relative z-10">
 <h1 className="text-2xl antialiased uppercase text-center md:text-left md:pl-45 md:pt-45 pt-20 "> Sobre mi</h1>
 <div className="flex justify-center items-center min-h-screen px-4 relative ">
-  <div className=" rounded-t-full border border-gray-400 w-full max-w-md h-[650px] md:h-[720px] p-10 bg-[#ebddd7]">
+  <div className=" rounded-t-full border border-gray-400 w-full max-w-md h-[660px] md:h-[720px] p-10 bg-[#ebddd7]">
     <div className=" rounded-t-full border border-gray-400 w-full max-w-md h-[320px] md:h-[310px] p-10">
      <Image className='w-65 rounded-full center' src="/photo.jpeg" alt="Profile" width={800} height={800} />
-    <p className="text-center md:mt-17 mt-10  md:text-lg ">
+    <p className="text-center md:mt-17 mt-30  md:text-lg ">
       Me considero una persona tenaz que ha logrado sus objetivos a través de dedicación y esfuerzo 
       Empece en el mundo de la programacion hace mas de tres años y cada día aumenta más mi interés en esta área
     </p>
