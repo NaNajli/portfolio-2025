@@ -10,7 +10,7 @@ export default function About() {
 <div className="flex justify-center items-center min-h-screen px-4 relative ">
   <div className=" rounded-t-full border border-gray-400 w-full max-w-md h-[650px] md:h-[720px] p-10 bg-[#ebddd7]">
     <div className=" rounded-t-full border border-gray-400 w-full max-w-md h-[320px] md:h-[310px] p-10">
-     <Image className='w-65 rounded-full center' src="/photo.JPEG" alt="Profile" width={800} height={800} />
+     <Image className='w-65 rounded-full center' src="/photo.jpeg" alt="Profile" width={800} height={800} />
     <p className="text-center md:mt-17 mt-10  md:text-lg ">
       Me considero una persona tenaz que ha logrado sus objetivos a través de dedicación y esfuerzo 
       Empece en el mundo de la programacion hace mas de tres años y cada día aumenta más mi interés en esta área
