@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
   return (
-  
+<>
 <div className="relative text-black bg-white">
 <div className="absolute inset-5 bg-[url('/clouds.svg')] bg-repeat bg-cover bg-center opacity-25 z-0"></div>
 <div className="relative z-10">
@@ -24,12 +25,13 @@ export default function About() {
   Estoy lista para sumarme a proyectos donde la curiosidad y la calidad se encuentren<br></br>
   Este portafolio no es un punto de llegada: es mi punto de partida hacia todo lo que quiero construir
     </p>
-    <a href="/" className="fixed bottom-4 right-4 p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 transition"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a>
   </div>
+  <Link href="/" className="fixed bottom-4 right-4 p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 transition"></Link>
+  
 </div>
 </div>  
 </div>
-
+</>  
 
 
   )

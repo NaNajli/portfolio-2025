@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const techs = [
   { name: 'JavaScript', icon: '/javascript.svg' },
@@ -45,7 +46,7 @@ export default function TechSlider() {
             key={index}
             className="shrink-0 w-40 h-40 flex flex-col items-center justify-center"
           > 
-            <img src={tech.icon} alt={tech.name} className="h-12 mb-2" />
+            <Image  className="h-12 mb-2" src={tech.icon} alt={tech.name} width={50} height={50}/>
             <p className="text-sm font-semibold text-center">{tech.name}</p>
           </div>
         ))}
