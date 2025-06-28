@@ -30,7 +30,7 @@ const links = [
   {
     id: 5,
     label: 'Proyectos',
-    href: 'projects',
+    href: '/projects',
   },
 ]; 
 
@@ -41,10 +41,9 @@ const links = [
 
 
    return (
-     <nav className="w-full p-3 bg-white shadow-md">
+     <nav className="w-full p-3 bg-white shadow-md  fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between">
         <Image className='w-25 rounded-full shadow-xl/30 md:w-35 justify-self-start ' src="/logo.jpg" alt="Profile" width={500} height={500} />
-        {/* <Image className='w-25 md:w-35 justify-self-start ' src="/logo.jpg" alt="Profile" width={500} height={500} /> */}
         <button onClick={handleClick} className="md:hidden text-2xl"> ☰ </button>
       </div>
       <ul className={`flex flex-col md:flex-row md:items-center ${ isOpen ? 'block' : 'hidden md:flex' }`}> 
