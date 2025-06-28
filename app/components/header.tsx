@@ -1,4 +1,6 @@
 import { Italiana } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 
 const italiana = Italiana({
   variable: '--Static',
@@ -15,6 +17,7 @@ const Header = () => {
     </h1>
     <h2 className='text-center font-bold '>Desarrollo Web</h2>   
     <div className="bg-[#ebddd7] p-30"></div>
+      <Link href="/" className="fixed bottom-4 right-4 p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 transition"> <Image className='w-10 rounded-full center' src="/home.svg" alt="Profile" width={20} height={20}/></Link>
     </header>
     </>
   )

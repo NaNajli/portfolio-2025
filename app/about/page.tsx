@@ -26,7 +26,7 @@ export default function About() {
   Este portafolio no es un punto de llegada: es mi punto de partida hacia todo lo que quiero construir
     </p>
   </div>
-  <Link href="/" className="fixed bottom-4 right-4 p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 transition"></Link>
+  <Link href="/" className="fixed bottom-4 right-4 p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 transition"> <Image className='w-10 rounded-full center' src="/home.svg" alt="Profile" width={20} height={20}/></Link>
   
 </div>
 </div>  
