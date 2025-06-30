@@ -23,11 +23,6 @@ const links = [
     href:`/education`
   },
   {
-    id:4,
-    label:'Contacto',
-    href:`/contact`
-  },
-  {
     id: 5,
     label: 'Proyectos',
     href: '/projects',

@@ -11,7 +11,7 @@ const italiana = Italiana({
 const Header = () => {
   return (
     <>
-    <header className= 'w-full min-h-screen md:min-h-[80vh] px-4 md:px-8 py-6 pt-30'>
+    <header className= 'w-full min-h-screen md:min-h-[80vh] px-4 md:px-8 py-6 md:pt-30 pt-60'>
     <h1 className={`${italiana.className} text-4xl sm:text-5xl pt:3 text-center md:text-6xl font-bold pt-34 mb-6`}>
          Nadia Rodriguez
     </h1>
