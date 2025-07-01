@@ -17,7 +17,7 @@ const Footer = () => {
     <div className="flex flex-row gap-5 justify-center m-9">
     <Link href="https://github.com/NaNajli" className=""> <Image className='' src="/github.svg" alt="Github" width={50} height={50}/></Link>
     <Link href="mailto:nadurodriguez2@gmail.com" className=""> <Image className='' src="/gmail.svg" alt="Gmail" width={50} height={50}/></Link>
-    <Link href="https://www.linkedin.com/in/nadianajli/" className=""> <Image className='' src="/linkedin.svg" alt="likedin" width={50} height={50}/></Link>
+    <Link href="https://www.linkedin.com/in/nadianajli/" className=""> <Image className='' src="/Linkedin.svg" alt="likedin" width={50} height={50}/></Link>
     </div>
     <p className="text-center">©2025 -Nadia Rodriguez-Argentina</p>
     </div>
